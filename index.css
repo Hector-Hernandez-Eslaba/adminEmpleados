@@ -7,7 +7,7 @@ body{
     display: grid;
     grid-template:
     "nav" 100px
-    "content" 500px
+    "content" 800px
     "footer" 100px/400px ;
     background: rgb(23,45,157);
     background: linear-gradient(180deg, rgba(23,45,157,1) 29%, rgba(120,124,254,1) 89%);
@@ -20,12 +20,49 @@ nav{
     justify-content: space-around;
 }
 
-section{
+.boxContact{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.email{
+    width: 30px;
+}
+
+.Logo{
+    width: 150px;
+    object-fit: contain;
+}
+
+main{
     grid-area: content;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
+    
+}
+
+
+hr{
+    background-color: rgb(4, 50, 91);
+    width: 90%;
+    height: 2px;
+    border-radius: 5px;
+    border: none;
 }
 
 .boxMain{
@@ -33,10 +70,10 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: bisque;
+    border-radius: 5px;
     gap: 20px;
     width: 90%;
-    height: 200px;
+    height: 300px;
 }
 
 .boxInpust{
@@ -44,7 +81,6 @@ section{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: aqua;
     width: 90%;
 }
 
@@ -64,11 +100,53 @@ input:is(:focus, :valid){
     left: 1%;
     padding: 0 10px 0 10px;
     transition: 500ms;
-    background-color: aquamarine;
+    background-color: #ffff;
+    border-radius: 5px;
 }
 
 input:focus ~ label,
 input:valid ~ label{
     transform: translateY(-20px);
     color: #000;
+}
+
+.boxBtn{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.boxBtn button{
+    padding: 10px;
+    width: 40%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+.boxCards{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(143, 193, 236);
+    border-radius: 5px;
+    width: 90%;
+    height: 300px;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Logo2{
+    width: 250px;
 }

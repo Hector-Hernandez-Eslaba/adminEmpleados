@@ -10,47 +10,50 @@
 
 <body>
     <nav>
-        <img src="Imagenes/Skraken.svg" alt="Logo">
+        <img class="Logo" src="Imagenes/Skraken.svg" alt="Logo">
         <div class="boxContact">
-            <img src="Imagenes/mail.svg" alt="email">
+            <img class="email" src="Imagenes/mail.svg" alt="email">
             <p>hheslaba@gmail.com</p>
         </div>
     </nav>
-    <section>
-        <h1>Ingreso de trabajadores</h1>
-        <hr>
-        <div class="boxMain">
-            <div class="boxInpust">
-                <input id="nombre" type="text" required>
-                <label for="nombre">Nombre</label>
+    <main>
+        <section>
+            <h1>Ingreso de trabajadores</h1>
+            <hr>
+            <div class="boxMain">
+                <div class="boxInpust">
+                    <input id="nombre" type="text" required>
+                    <label for="nombre">Nombre</label>
+                </div>
+                <div class="boxInpust">
+                    <input id="apellido1" type="text" required>
+                    <label for="apellido1">Apellido paterno</label>
+                </div>
+                <div class="boxInpust">
+                    <input id="apellido2" type="text" required>
+                    <label for="apellido2">Apellido materno</label>
+                </div>
+                <div class="boxInpust">
+                    <input id="edad" type="number" required>
+                    <label for="edad">Edad</label>
+                </div>
+                <div class="boxInpust">
+                    <input id="puesto" type="text" required>
+                    <label for="puesto">Puesto</label>
+                </div>
             </div>
-            <div class="boxInpust">
-                <input id="apellido1" type="text" required>
-                <label for="apellido1">Apellido paterno</label>
+            <div class="boxBtn">
+                <button onclick="enviarDatos()">Enviar datos</button>
+                <button onclick="mostrarEmpleados()">Mostrar Empleados</button>
             </div>
-            <div class="boxInpust">
-                <input id="apellido2" type="text" required>
-                <label for="apellido2">Apellido materno</label>
-            </div>
-            <div class="boxInpust">
-                <input id="edad" type="number" required>
-                <label for="edad">Edad</label>
-            </div>
-            <div class="boxInpust">
-                <input id="puesto" type="text" required>
-                <label for="puesto">Puesto</label>
-            </div>
-        </div>
-        <div class="boxBtn">
-            <button onclick="enviarDatos()">Enviar datos</button>
-            <button onclick="mostrarEmpleados()">Mostrar Empleados</button>
-        </div>
-    </section>
-    <article>
-        <div class="boxCards"></div>
-    </article>
+        </section>
+        <article>
+            <div class="boxCards"></div>
+        </article>
+    </main>
     <footer>
-        <img src="Imagenes/Skraken.svg" alt="Logo">
+        <img class="Logo2" src="Imagenes/Skraken.svg" alt="Logo">
+        <p>Create by Hector Hernandez</p>
     </footer>
 </body>
 <script src="index.js"></script>

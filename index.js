@@ -21,10 +21,18 @@ function enviarDatos(){
 
 }
 
+const obrero = document.querySelector(".boxCards");
+console.log(obrero);
+
 function mostrarEmpleados(){
     for(let arrayEmpleados of empleados){
         for(let mostrarTrabajadores in arrayEmpleados){
-            alert(mostrarTrabajadores + arrayEmpleados[mostrarTrabajadores])
+
+            let obreroCard = document.createElement("p")
+            obreroCard.innerText = arrayEmpleados.nombre
+
+            obrero.appendChild(obreroCard);
+            //alert(mostrarTrabajadores + arrayEmpleados[mostrarTrabajadores])
 
         }
     }
