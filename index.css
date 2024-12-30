@@ -9,9 +9,7 @@ body{
     "nav" 100px
     "content" 800px
     "footer" 100px/400px ;
-    background: rgb(23,45,157);
-    background: linear-gradient(180deg, rgba(23,45,157,1) 29%, rgba(120,124,254,1) 89%);
-
+    background: #213555
 }
 
 nav{
@@ -37,6 +35,12 @@ nav{
     object-fit: contain;
 }
 
+a{
+    font-family: "Maven Pro", serif;
+    color: #F5EFE7;
+    text-decoration: none;
+}
+
 main{
     grid-area: content;
     display: flex;
@@ -45,6 +49,12 @@ main{
     align-content: center;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+h1{
+    font-family: "Maven Pro", serif;
+    text-transform: uppercase;
+    color: #F5EFE7 ;
 }
 
 section{
@@ -58,7 +68,7 @@ section{
 
 
 hr{
-    background-color: rgb(4, 50, 91);
+    background-color: #F5EFE7;
     width: 90%;
     height: 2px;
     border-radius: 5px;
@@ -92,7 +102,7 @@ hr{
 }
 
 input:is(:focus, :valid){
-    outline-color: blue;
+    outline-color: #3E5879;
 }
 
 .boxInpust label{
@@ -102,6 +112,7 @@ input:is(:focus, :valid){
     transition: 500ms;
     background-color: #ffff;
     border-radius: 5px;
+    font-family: "Chivo", serif;
 }
 
 input:focus ~ label,
@@ -121,7 +132,14 @@ input:valid ~ label{
     width: 40%;
     border-radius: 5px;
     border: none;
+    font-family: "Merriweather", serif;
+    font-weight: 600;
     cursor: pointer;
+}
+
+.boxBtn button:hover{
+    background-color: #3E5879;
+    color: #F5EFE7;
 }
 
 article{
@@ -135,7 +153,7 @@ article{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(143, 193, 236);
+    background-color: #D8C4B6;
     border-radius: 5px;
     width: 90%;
     height: 300px;
@@ -143,7 +161,7 @@ article{
 
 .masterCard{
     display: flex;
-    background-color: bisque;
+    background-color: #3E5879;
     border-radius: 5px;
     padding: 5px;
 }
@@ -157,6 +175,30 @@ footer{
     justify-content: center;
 }
 
+p{
+    font-family: "Chivo", serif;
+    color: #F5EFE7;
+}
+
 .Logo2{
     width: 250px;
+}
+
+
+@media (min-width: 400px) and (max-width: 1600px){
+
+    body{
+        display: grid;
+        grid-template:
+        "nav nav" 100px
+        "content content" 800px
+        "footer footer" 100px/800px 800px;
+        background: #213555
+    }  
+
+    nav{
+        grid-area: nav nav;
+        display: flex;
+        justify-content: space-around;
+    }
 }
