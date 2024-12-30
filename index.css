@@ -133,11 +133,21 @@ article{
 .boxCards{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(143, 193, 236);
     border-radius: 5px;
     width: 90%;
     height: 300px;
 }
+
+.masterCard{
+    display: flex;
+    background-color: bisque;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 
 footer{
     grid-area: footer;
