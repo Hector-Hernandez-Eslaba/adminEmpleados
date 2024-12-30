@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    grid-template:
+    "nav" 100px
+    "content" 500px
+    "footer" 100px/400px ;
+    background: rgb(23,45,157);
+    background: linear-gradient(180deg, rgba(23,45,157,1) 29%, rgba(120,124,254,1) 89%);
+
+}
+
+nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+}
+
+section{
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    gap: 20px;
+    width: 90%;
+    height: 200px;
+}
+
+.boxInpust{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: aqua;
+    width: 90%;
+}
+
+.boxInpust input{
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    border: none;
+}
+
+input:is(:focus, :valid){
+    outline-color: blue;
+}
+
+.boxInpust label{
+    position: absolute;
+    left: 1%;
+    padding: 0 10px 0 10px;
+    transition: 500ms;
+    background-color: aquamarine;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    transform: translateY(-20px);
+    color: #000;
+}

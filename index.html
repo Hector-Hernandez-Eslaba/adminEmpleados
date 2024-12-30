@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Empleados</title>
+</head>
+
+<body>
+    <nav>
+        <img src="Imagenes/Skraken.svg" alt="Logo">
+        <div class="boxContact">
+            <img src="Imagenes/mail.svg" alt="email">
+            <p>hheslaba@gmail.com</p>
+        </div>
+    </nav>
+    <section>
+        <h1>Ingreso de trabajadores</h1>
+        <hr>
+        <div class="boxMain">
+            <div class="boxInpust">
+                <input id="nombre" type="text" required>
+                <label for="nombre">Nombre</label>
+            </div>
+            <div class="boxInpust">
+                <input id="apellido1" type="text" required>
+                <label for="apellido1">Apellido paterno</label>
+            </div>
+            <div class="boxInpust">
+                <input id="apellido2" type="text" required>
+                <label for="apellido2">Apellido materno</label>
+            </div>
+            <div class="boxInpust">
+                <input id="edad" type="number" required>
+                <label for="edad">Edad</label>
+            </div>
+            <div class="boxInpust">
+                <input id="puesto" type="text" required>
+                <label for="puesto">Puesto</label>
+            </div>
+        </div>
+        <div class="boxBtn">
+            <button onclick="enviarDatos()">Enviar datos</button>
+            <button onclick="mostrarEmpleados()">Mostrar Empleados</button>
+        </div>
+    </section>
+    <article>
+        <div class="boxCards"></div>
+    </article>
+    <footer>
+        <img src="Imagenes/Skraken.svg" alt="Logo">
+    </footer>
+</body>
+<script src="index.js"></script>
+
+</html>
